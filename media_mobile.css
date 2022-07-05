@@ -1,0 +1,501 @@
+/* 모바일 기본값 */
+.grid_Wrap {
+  display: none;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+/* 모바일 버전 - Header */
+header {
+  width: 100%;
+  height: 70px;
+  padding: 0 1rem;
+  top: 0;
+  background: var(--color-gradient);
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav {
+  left: -400%;
+  top: 60px;
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-gradient);
+}
+
+.gnb {
+  padding-top: 1rem;
+}
+
+nav.on,
+.gnb {
+  left: 0;
+}
+
+.gnb>li>a {
+  font-size: 1.15rem;
+  padding: 0.25rem 1rem;
+}
+
+.gnb>li>a::before {
+  width: calc(100% - 50px);
+  height: 2px;
+  bottom: 9px;
+}
+
+.sub>li>a {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.hd_sns {
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, -10%);
+}
+
+.hd_sns img {
+  width: 30px;
+}
+
+.hd_sns>a:nth-of-type(2) img {
+  width: 22px;
+}
+
+.hd_sns>a:nth-of-type(4) img {
+  width: 35px;
+}
+
+.lang_list {
+  right: -200%;
+}
+
+.lang_list.on {
+  right: 0;
+}
+
+.gnb>li:nth-of-type(1) .sub {
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.gnb>li:nth-of-type(1) .sub li {
+  width: 180px;
+}
+
+/* Header 끝 */
+/* 모바일 버전 - section-1 시작*/
+
+.intro_img {
+  padding: 25vh 0;
+}
+
+.img_slide {
+  margin-top: 45px;
+  width: 100%;
+}
+
+.img_slide img {
+  width: 200%;
+}
+
+.intro_text {
+  bottom: 0;
+}
+
+.intro_text p {
+  font-size: 1.8rem;
+}
+
+.intro_text b {
+  font-size: 1.125rem;
+}
+
+.intro_button {
+  left: 16px;
+  bottom: 5%;
+  transform: translateY(-5%);
+}
+
+.intro_button a {
+  padding: 0.5rem 1rem;
+}
+
+/* 모바일 버전 - section-1 끝 */
+/* 모바일 버전 - section-2 시작*/
+
+.main_facilities {
+  margin-bottom: 7rem;
+}
+
+.main_text {
+  margin: 16px;
+  padding: 2rem 0;
+  text-align: end;
+}
+
+.main_facilities::after {
+  content: "";
+  position: absolute;
+  background-image: url(./img/section2/section_02_background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 105%;
+  z-index: -1;
+}
+
+.main_findButton {
+  padding: 1rem 1.5rem;
+}
+
+/* 모바일 버전 - section-2 끝*/
+/* 모바일 버전 - section-3 시작*/
+
+.sub_facilities {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.sub_facilities::before {
+  content: "";
+  position: absolute;
+  background-image: url(./img/section3/section_03_background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 110%;
+  height: 120%;
+  z-index: -1;
+}
+
+.sub_text {
+  padding: 0 1rem;
+}
+
+.top_banner,
+.bottom_banner {
+  height: 38vh;
+  padding: 0 1rem;
+  justify-content: space-between;
+}
+
+.massage,
+.fitness,
+.facilities,
+.special_offers {
+  width: 45%;
+  height: 85%;
+}
+
+.massage,
+.fitness {
+  margin-right: 0.5rem;
+}
+
+.facilities,
+.special_offers {
+  align-self: flex-end;
+}
+
+.massage:hover,
+.fitness:hover,
+.facilities:hover,
+.special_offers:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+/* 모바일 버전 - section-3 끝 */
+/* 모바일 버전 - section-4 시작 */
+
+.food_list {
+  padding: 7rem 0;
+  flex-direction: column;
+  position: relative;
+}
+
+.food_list::before {
+  content: "";
+  position: absolute;
+  background-image: url(./img/section4/section_04_background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  z-index: -1;
+}
+
+.food_text,
+.food_slide_wrap {
+  margin: 0 1rem;
+}
+
+.food_text {
+  font-size: 1.5rem;
+}
+
+.food_slide_wrap {
+  overflow: hidden;
+}
+
+.food_slide {
+  display: flex;
+  width: 400%;
+  padding-bottom: 1rem;
+}
+
+.food_slide>li {
+  padding-bottom: 5rem;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 25px 25px 0 0;
+  background-color: var(--color-white);
+}
+
+.food_slide img {
+  border-radius: 25px 25px 0 0;
+}
+
+.food_slide>li>p {
+  bottom: 20px;
+  left: 15px;
+}
+
+.foodButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 15px;
+  bottom: 10px;
+  border-radius: 15px;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-gradient);
+  color: var(--color-white);
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.food_text {
+  padding: 2rem 0;
+  align-self: flex-end;
+}
+
+/* 모바일 버전 - section-4 끝 */
+/* 모바일 버전 - section-5 시작*/
+
+.spot_list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.spot_list::before {
+  content: "";
+  position: absolute;
+  background-image: url(./img/section5/section_05_background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+.spot_text {
+  margin: 4rem 1rem;
+  align-self: flex-start;
+}
+
+.spot_slide {
+  width: 500%;
+}
+
+.spot_slide>li {
+  padding-bottom: 9rem;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 25px 25px 0 0;
+  background-color: var(--color-white);
+}
+
+.spot_slide img {
+  width: 100%;
+}
+
+.text_wrap {
+  position: absolute;
+  bottom: 10%;
+  transform: translateY(-10%);
+}
+
+.text_wrap p {
+  margin-left: 10px;
+}
+
+.text_wrap p:nth-of-type(1) {
+  font-weight: 300;
+  padding-bottom: 0.5rem;
+}
+
+.text_wrap p:nth-of-type(2),
+.text_wrap p:nth-of-type(3) {
+  font-size: 1.15rem;
+}
+
+.spotButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 15px;
+  bottom: 10px;
+  padding: 0.8rem 1.75rem;
+}
+
+.spot_button {
+  align-self: center;
+}
+
+/* 모바일 버전 - section-5 끝 */
+/* 모바일 버전 - section-6 시작 */
+
+.map {
+  margin: 2rem 1rem;
+}
+
+.map_text {
+  padding: 2rem 0;
+}
+
+.map_image {
+  width: 100%;
+  border-radius: 15px;
+  padding-bottom: 30vh;
+  background-image: url(./img/section6/sec6_01.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.address {
+  width: 320px;
+  position: relative;
+  margin: 1rem 0;
+  padding: 1.25rem 0;
+}
+
+.address a {
+  top: 15px;
+  right: 15px;
+  padding: 0.5rem 1rem;
+}
+
+.address strong {
+  font-size: 1.5rem;
+}
+
+.address p {
+  line-height: 20px;
+}
+
+/* 모바일 버전 - section-6 끝 */
+/* 모바일 버전 - footer 시작 */
+footer {
+  background-color: var(--color-font);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ft_logo {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ft_logo img {
+  width: 70%;
+}
+
+footer>* {
+  margin: 0 32px;
+  color: var(--color-white);
+}
+
+footer img {
+  width: 25px;
+}
+
+footer p {
+  line-height: 1.25rem;
+  font-size: 0.8rem;
+}
+
+.ft_sns {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ft_sns a {
+  display: block;
+  padding: 0 0.75rem;
+}
+
+.ft_sns>a:nth-of-type(2) img {
+  width: 20px;
+}
+
+.ft_sns>a:nth-of-type(4) img {
+  width: 30px;
+}
+
+.ft_number,
+.copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+
+.ft_number>* {
+  font-size: 0.7rem;
+}
+
+.copyright>* {
+  font-size: 0.6rem;
+}
+
+.copyright {
+  position: relative;
+}
+
+.copyright::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 1px;
+  background-color: var(--color-white);
+  top: -10px;
+}
+
+.ft_number strong {
+  font-weight: 600;
+}
